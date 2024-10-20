@@ -1,14 +1,19 @@
 #include <stdio.h>
 
-void pares(int num){
+void impares(int num){
 
-    for(int i=1; i <= num; i++){
-        if (i%2 == 0)
+    int cont;
+    int i = num;
+
+    while (cont < 6)
+    {
+        if (i%2 != 0)
         {
             printf("%d\n", i);
+            cont++;
         }
-        
-
+    i++;
+    
     }
 
 }
@@ -19,7 +24,7 @@ int main() {
     int num;
     scanf("%d", &num);
     
-    pares(num);
+    impares(num);
  
     return 0;
 }
